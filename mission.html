@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vision and History - AwardGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        /* Basic CSS for dropdown menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #fff;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            white-space: nowrap;
+            color: #fff;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #333;
+        }
+
+        /* CSS for background image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('main.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: orange;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section h2 {
+            color: orange;
+            margin-top: 0;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li ul {
+                position: static;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            nav ul li ul li a {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AwardGenie</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="products.html">Services</a>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="custom.html">Custom Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our Vision</h2>
+            <div class="content">
+                <p>Our vision is to create a world where every student has access to the resources they need to succeed, regardless of their financial situation. We believe that education is the key to unlocking potential and creating a brighter future for individuals and society as a whole. Our goal is to provide a platform that makes it easy for students to find and apply for scholarships, and for organizations to manage and award scholarships.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Our History</h2>
+            <div class="content">
+                <p>Our organization was founded in 2010 by a group of individuals who were passionate about education and wanted to make a difference in the lives of students. We saw that many students were struggling to find and apply for scholarships, and that many organizations were struggling to manage and award scholarships. We decided to create a platform that would address these issues and make it easier for students to access the resources they need.</p>
+                <p>In our early days, we faced many challenges. We had to build a team, develop a product, and establish partnerships with organizations. But we were driven by our mission and our vision, and we worked tirelessly to make our platform a reality.</p>
+                <p>Today, we are proud to say that our platform has helped thousands of students find and apply for scholarships, and has helped organizations award millions of dollars in scholarships. We have established partnerships with over 100 organizations, and our platform is used by students and organizations all over the world.</p>
+                <p>We are committed to continuing to improve and expand our platform, and to finding new ways to support students and organizations. We believe that education is the key to creating a brighter future, and we are dedicated to making it easier for students to access the resources they need to succeed.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AwardGenie. All rights reserved.</p>
+    </footer>
+</body>
+</html>

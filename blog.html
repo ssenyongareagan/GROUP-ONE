@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog - AwardGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #ff9900;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            margin: 0;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff9900;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post {
+            margin-bottom: 40px;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .blog-post h2 {
+            color: #ff9900;
+            margin-top: 0;
+        }
+
+        .blog-post p {
+            line-height: 1.6;
+        }
+
+        .blog-post a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AwardGenie</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="products.html">Services</a>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="custom.html">Custom Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="blog-post">
+            <img src="blog3.webp" alt="Scholarship Success">
+            <h2>How to Successfully Apply for Scholarships</h2>
+            <p>Applying for scholarships can be a daunting task, but with the right approach and preparation, you can increase your chances of success. Here are some tips to help you get started:</p>
+            <p>First, research available scholarships thoroughly. Look for scholarships that match your academic achievements, interests, and background. Use our AwardGenie platform to find scholarships that are tailored to you.</p>
+            <p>Next, make sure to carefully read and follow all application instructions. Pay attention to deadlines and gather all required documents in advance.</p>
+            <p>Lastly, write a compelling personal statement. Highlight your achievements, goals, and how the scholarship will help you achieve them. Be honest and authentic in your writing.</p>
+            <p>For more detailed guidance, check out our <a href="post.html">full blog post</a>.</p>
+        </section>
+
+        <section class="blog-post">
+            <img src="blog2.jpeg" alt="Volunteer">
+            <h2>The Impact of Volunteering on Scholarship Applications</h2>
+            <p>Volunteering can significantly enhance your scholarship applications. Not only does it demonstrate your commitment to giving back to the community, but it also shows that you are well-rounded and dedicated.</p>
+            <p>Scholarship committees look for applicants who have a history of community involvement and leadership. By volunteering, you can develop valuable skills and experiences that set you apart from other applicants.</p>
+            <p>Learn more about the benefits of volunteering and how it can boost your scholarship applications in our <a href="post.html">detailed article</a>.</p>
+        </section>
+
+        <section class="blog-post">
+            <img src="blog1.jpg" alt="Networking">
+            <h2>The Power of Networking for Scholarship Opportunities</h2>
+            <p>Networking is a powerful tool in finding scholarship opportunities. By building connections with educators, professionals, and peers, you can gain access to valuable information and recommendations.</p>
+            <p>Attend events, join student organizations, and participate in online forums to expand your network. Don't hesitate to reach out to your connections for advice and support during your scholarship search.</p>
+            <p>Discover more strategies for effective networking in our <a href="post.html">comprehensive guide</a>.</p>
+        </section>
+        
+        <section class="blog-post">
+            <img src="https://as2.ftcdn.net/v2/jpg/01/48/13/17/1000_F_148131790_dkm5dYPZeg18QZh3RLDYADpAhMkx6rZZ.jpg" alt="Networking">
+            <h2>The Power of Networking for Scholarship Opportunities</h2>
+            <p>Networking is a powerful tool in finding scholarship opportunities. By building connections with educators, professionals, and peers, you can gain access to valuable information and recommendations.</p>
+            <p>Attend events, join student organizations, and participate in online forums to expand your network. Don't hesitate to reach out to your connections for advice and support during your scholarship search.</p>
+            <p>Discover more strategies for effective networking in our <a href="post.html">comprehensive guide</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AwardGenie. All rights reserved.</p>
+    </footer>
+    <script>
+        // Ensure dropdown menus work on hover
+        document.querySelectorAll('nav ul li').forEach(li => {
+            li.addEventListener('mouseenter', () => {
+                const submenu = li.querySelector('ul');
+                if (submenu) {
+                    submenu.style.display = 'block';
+                }
+            });
+            li.addEventListener('mouseleave', () => {
+                const submenu = li.querySelector('ul');
+                if (submenu) {
+                    submenu.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

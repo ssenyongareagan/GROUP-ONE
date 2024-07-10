@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions (FAQs) - AwardGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        /* Basic CSS for dropdown menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #fff;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            white-space: nowrap;
+            color: #fff;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #333;
+        }
+
+        /* CSS for background image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('main.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: orange;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section h2 {
+            color: orange;
+            margin-top: 0;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq h3 {
+            color: orange;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li ul {
+                position: static;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            nav ul li ul li a {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AwardGenie</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="products.html">Services</a>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="custom.html">Custom Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            <div class="faq">
+                <h3>1. How do I create a scholarship?</h3>
+                <p>To create a scholarship, you need to sign in to your administrator account, go to the 'Create Scholarship' section, fill in the necessary details such as scholarship name, criteria, and deadline, and then submit it for approval.</p>
+            </div>
+            <div class="faq">
+                <h3>2. How do I submit an application?</h3>
+                <p>To submit an application, log in to your student account, browse available scholarships, select the one you wish to apply for, fill in the required details, and upload any necessary documents before submitting your application.</p>
+            </div>
+            <div class="faq">
+                <h3>3. How do I evaluate applications as a reviewer?</h3>
+                <p>Reviewers can log in to their accounts, navigate to the 'Review Applications' section, select the applications assigned to them, review the provided information and documents, and provide their scores and feedback.</p>
+            </div>
+            <div class="faq">
+                <h3>4. How do I award scholarships as an administrator?</h3>
+                <p>As an administrator, you can log in to your account, go to the 'Award Scholarships' section, review the applications and scores provided by reviewers, select the recipients, and officially award the scholarships.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Troubleshooting</h2>
+            <div class="faq">
+                <h3>Login issues</h3>
+                <p>If you are experiencing login issues, make sure you are using the correct username and password. If you have forgotten your password, use the 'Forgot Password' link to reset it. For further assistance, contact our support team.</p>
+            </div>
+            <div class="faq">
+                <h3>Application submission errors</h3>
+                <p>If you encounter errors while submitting your application, ensure that all required fields are filled out correctly and that your documents are in the supported formats. If the problem persists, try clearing your browser cache or using a different browser.</p>
+            </div>
+            <div class="faq">
+                <h3>Review and feedback issues</h3>
+                <p>If you are having issues with reviewing applications or providing feedback, make sure you are logged in to your reviewer account and that you have access to the assigned applications. For further assistance, contact our support team.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AwardGenie. All rights reserved.</p>
+    </footer>
+</body>
+</html>

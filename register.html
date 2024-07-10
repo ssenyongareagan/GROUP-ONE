@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AwardGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .blur-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-container {
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .form-container img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff00f2;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .form-container button:hover {
+            background-color: #e68a00;
+        }
+
+        .form-container .alt-login {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .form-container .alt-login a {
+            color: #ff9900;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .form-container .alt-login a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container .social-login {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .form-container .social-login a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        .form-container .social-login a.google {
+            background-color: #db4437;
+        }
+
+        .form-container .social-login a.facebook {
+            background-color: #3b5998;
+        }
+
+        .form-container .social-login a.twitter {
+            background-color: #1da1f2;
+        }
+
+        .form-container .social-login a.linkedin {
+            background-color: #0077b5;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-bg"></div>
+    <div class="form-container">
+        <img src="path/to/your/custom-icon.png" alt="Custom Icon">
+        <h2>Sign Up</h2>
+        <form action="signup_action.html" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="alt-login">
+            <p>Or sign up with</p>
+            <div class="social-login">
+                <a href="#" class="google"><i class="fab fa-google"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

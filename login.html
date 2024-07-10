@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AwardGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .blur-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        .form-container {
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .form-container img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .form-container button:hover {
+            background-color: #e68a00;
+        }
+
+        .form-container .alt-login {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .form-container .alt-login a {
+            color: #ff9900;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .form-container .alt-login a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container .social-login {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .form-container .social-login a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+        }
+
+        .form-container .social-login a.google {
+            background-color: #db4437;
+        }
+
+        .form-container .social-login a.facebook {
+            background-color: #3b5998;
+        }
+
+        .form-container .social-login a.twitter {
+            background-color: #1da1f2;
+        }
+
+        .form-container .social-login a.linkedin {
+            background-color: #0077b5;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-bg"></div>
+    <div class="form-container">
+        <!-- Path to your custom icon image -->
+        <img src="icon.jpg" alt="Custom Icon">
+        <h2>Login</h2>
+        <form action="login_action.html" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="alt-login">
+            <p>Or login with</p>
+            <div class="social-login">
+                <a href="#" class="google">G</a>
+                <a href="#" class="facebook">f</a>
+                <a href="#" class="twitter">t</a>
+                <a href="#" class="linkedin">in</a>
+            </div>
+            <p>Don't have an account? <a href="register.html">Sign up</a></p>
+        </div>
+    </div>
+</body>
+</html>

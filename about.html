@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AwardGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        /* Basic CSS for dropdown menu */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding-left: 0;
+
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: orange;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            white-space: nowrap;
+            color: #fff;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #333;
+        }
+
+        /* CSS for background image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('main.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: orange;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section h2, article h3 {
+            color: orange;
+            margin-top: 0;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
+
+        /* CSS for mission and vision sections */
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            text-align: center;
+        }
+
+        .about-section p {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .about-section img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li ul {
+                position: static;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            nav ul li ul li a {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AwardGenie</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="products.html">Services</a>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="custom.html">Custom Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h2>Mission Statement</h2>
+            <p>Empowering students to achieve their academic goals by providing financial support and opportunities for growth and development.</p>
+            <img src="mission.jpg" alt="Mission Image">
+        </section>
+        <section class="about-section">
+            <h2>Vision</h2>
+            <p>Our vision is to create a world where every student has access to the resources they need to succeed, regardless of their financial situation. We believe that education is a right, not a privilege, and we strive to make higher education accessible to all.</p>
+            <img src="vision.jpg" alt="Vision Image">
+        </section>
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>AwardGenie was founded with the belief that every student deserves the chance to achieve their academic dreams. Our team of educators, philanthropists, and industry professionals work tirelessly to provide scholarships and resources to students in need. Since our inception, we have helped thousands of students realize their potential and build a brighter future.</p>
+        </section>
+        <section class="about-section">
+            <h2>Meet Our Team</h2>
+            <p>Our team is composed of dedicated professionals who are passionate about education and student success. We come from diverse backgrounds, but we all share a common goal: to support students in achieving their academic goals.</p>
+            <img src="team.jpg" alt="Team Image">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AwardGenie. All rights reserved.</p>
+    </footer>
+</body>
+</html>

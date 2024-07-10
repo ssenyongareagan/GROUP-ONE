@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - AwardGenie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            color: #fff;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ccc;
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            padding: 10px;
+            white-space: nowrap;
+            color: #fff;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('main.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header, footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: orange;
+        }
+
+        main {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        section h2 {
+            color: orange;
+            margin-top: 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .team-card {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .team-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-card h3 {
+            margin: 10px 0;
+            color: orange;
+        }
+
+        .team-card p {
+            margin: 5px 0;
+        }
+
+        footer p {
+            margin: 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            nav ul li ul {
+                position: static;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            nav ul li ul li a {
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AwardGenie</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Our Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="products.html">Services</a>
+                    <ul>
+                        <li><a href="awards.html">Awards</a></li>
+                        <li><a href="custom.html">Custom Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="none.jpg" alt="Arineitwe Charity">
+                    <h3>Arineitwe Charity</h3>
+                    <p>Email: charity@example.com</p>
+                    <p>Bio: Arineitwe is a passionate first-year BIST student with a keen interest in software development and data analytics.</p>
+                </div>
+                <div class="team-card">
+                    <img src="rajab.jpg" alt="Ssegawa Rajab">
+                    <h3>Ssegawa Rajab</h3>
+                    <p>Email: rajab@example.com</p>
+                    <p>Bio: Ssegawa enjoys exploring new technologies and is particularly interested in cybersecurity and network management.</p>
+                </div>
+                <div class="team-card">
+                    <img src="madrine.jpg" alt="Nansubuga Madrine">
+                    <h3>Nansubuga Madrine</h3>
+                    <p>Email: madrine@example.com</p>
+                    <p>Bio: Nansubuga is dedicated to improving user experience and is focused on front-end development and UI/UX design.</p>
+                </div>
+                <div class="team-card">
+                    <img src="jonathan.jpg" alt="Mucunguzi Johnathan">
+                    <h3>Mucunguzi Johnathan</h3>
+                    <p>Email: johnathan@example.com</p>
+                    <p>Bio: Mucunguzi has a strong interest in database management and aims to become a data scientist.</p>
+                </div>
+                <div class="team-card">
+                    <img src="reagan.jpg" alt="Ssenyonga Reagan">
+                    <h3>Ssenyonga Reagan</h3>
+                    <p>Email: reagan@example.com</p>
+                    <p>Bio: Ssenyonga is fascinated by artificial intelligence and machine learning and is keen to develop innovative AI solutions.</p>
+                </div>
+                <div class="team-card">
+                    <img src="allan.jpg" alt="Kitto Allan">
+                    <h3>Kitto Allan</h3>
+                    <p>Email: allan@example.com</p>
+                    <p>Bio: Kitto has a passion for cloud computing and aims to specialize in cloud architecture and services.</p>
+                </div>
+                <div class="team-card">
+                    <img src="sadiq.jpg" alt="Katabazi Sadiq">
+                    <h3>Katabazi Sadiq</h3>
+                    <p>Email: sadiq@example.com</p>
+                    <p>Bio: Katabazi is focused on mobile app development and enjoys creating user-friendly applications for various platforms.</p>
+                </div>
+                <div class="team-card">
+                    <img src="precious.jpg" alt="Kemigisa Precious Loy">
+                    <h3>Kemigisa Precious Loy</h3>
+                    <p>Email: precious@example.com</p>
+                    <p>Bio: Kemigisa is interested in digital marketing and aims to combine technology with marketing strategies to drive business growth.</p>
+                </div>
+                <div class="team-card">
+                    <img src="barnabas.jpg" alt="Amanya Barnabas">
+                    <h3>Amanya Barnabas</h3>
+                    <p>Email: barnabas@example.com</p>
+                    <p>Bio: Amanya is passionate about web development and is constantly improving his skills in both front-end and back-end technologies.</p>
+                </div>
+                <div class="team-card">
+                    <img src="davis.jpg" alt="Atuhura Davis">
+                    <h3>Atuhura Davis</h3>
+                    <p>Email: davis@example.com</p>
+                    <p>Bio: Atuhura has a strong interest in project management and aims to lead tech projects that drive innovation and efficiency.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 AwardGenie. All rights reserved.</p>
+    </footer>
+</body>
+</html>
